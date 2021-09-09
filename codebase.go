@@ -18,7 +18,7 @@ var ObjProto = Object.prototype
 function isEmpty (obj) {
   if (obj == null) return true
   if (isArray(obj) ||
-     (typeof obj === 'string')) return (obj.length === 0)
+     (typeof obj === 'string')) return (obj.length === 0) 
   for (var key in obj) if (has(obj, key)) return false
   return true
 }
