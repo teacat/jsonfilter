@@ -30,9 +30,5 @@ func Filter(data []byte, mask string) ([]byte, error) {
 	if err != nil {
 		return nil, err
 	}
-	// inter, err := value.Export()
-	// if err != nil {
-	// 	return nil, err
-	// }
 	return []byte(value.String()), nil
 }
